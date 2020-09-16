@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import Badge from '@material-ui/core/Badge';
+import { Hidden } from '@material-ui/core';
 
 function rand() {
     return Math.round(Math.random() * 20) - 10;
@@ -55,7 +56,7 @@ export default function SimpleModal() {
 
     return (
         <div>
-            <Badge badgeContent={1} color="secondary">
+            <Badge color="secondary" overlap="circle" variant="dot">
                 <NotificationsIcon className="notif-button" onClick={handleOpen} />
             </Badge>         
             <Modal
