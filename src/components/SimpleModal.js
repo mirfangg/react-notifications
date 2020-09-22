@@ -3,7 +3,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import Badge from '@material-ui/core/Badge';
-import { Hidden } from '@material-ui/core';
 
 function rand() {
     return Math.round(Math.random() * 20) - 10;
